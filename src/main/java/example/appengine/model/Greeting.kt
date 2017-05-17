@@ -1,5 +1,9 @@
 package example.appengine.model
 
+import com.googlecode.objectify.annotation.Entity
+import com.googlecode.objectify.annotation.Id
+
+@Entity
 class Greeting {
 
   /**
@@ -12,6 +16,6 @@ class Greeting {
     this.name = name
   }
 
-  lateinit var name: String
+  @Id lateinit var name: String
 
 }

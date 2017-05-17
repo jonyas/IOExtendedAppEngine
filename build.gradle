@@ -57,6 +57,7 @@ dependencies {
     compile "javax.inject:javax.inject:$javax_inject"
     compile "com.google.dagger:dagger:$dagger"
     kapt "com.google.dagger:dagger-compiler:$dagger"
+    compile "com.googlecode.objectify:objectify:5.1.15"
 
     testCompile "org.assertj:assertj-core:$assertj"
     testCompile "com.google.appengine:appengine-testing:$appengine"

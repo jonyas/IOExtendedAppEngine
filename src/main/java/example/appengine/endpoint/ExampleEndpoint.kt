@@ -26,4 +26,9 @@ class ExampleEndpoint {
       httpMethod = ApiMethod.HttpMethod.GET,
       path = "greetings/{name}")
   fun sayHi(@Named("name") name: String): Greeting = exampleService.sayHi(name)
+
+  @ApiMethod(name = "getAll",
+      httpMethod = ApiMethod.HttpMethod.GET,
+      path = "greetings/")
+  fun getAll(): List<Greeting> = exampleService.getAll()
 }
