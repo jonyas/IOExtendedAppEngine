@@ -13,7 +13,7 @@
         <servlet-class>com.google.api.server.spi.EndpointsServlet</servlet-class>
         <init-param>
             <param-name>services</param-name>
-            <param-value>kotlin.appengine.endpoint.ExampleEndpoint</param-value>
+            <param-value>example.appengine.endpoint.ExampleEndpoint</param-value>
         </init-param>
         <init-param>
             <param-name>restricted</param-name>

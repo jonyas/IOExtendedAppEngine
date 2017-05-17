@@ -1,3 +1,17 @@
 package example.appengine.model
 
-data class Greeting(val greeting: String)
+class Greeting {
+
+  /**
+   * Empty constructor needed by objectify
+   */
+  @Suppress("UNUSED")
+  constructor()
+
+  constructor(name: String) {
+    this.name = name
+  }
+
+  lateinit var name: String
+
+}
