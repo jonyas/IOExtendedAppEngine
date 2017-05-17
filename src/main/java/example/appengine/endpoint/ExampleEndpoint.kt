@@ -1,10 +1,10 @@
-package endpoint
+package example.appengine.endpoint
 
 import com.google.api.server.spi.config.Api
 import com.google.api.server.spi.config.ApiMethod
-import di.DaggerInjector
-import model.Greeting
-import service.ExampleService
+import example.appengine.di.DaggerInjector
+import example.appengine.model.Greeting
+import example.appengine.service.ExampleService
 import javax.inject.Inject
 import javax.inject.Named
 

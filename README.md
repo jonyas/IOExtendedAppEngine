@@ -14,4 +14,18 @@ You need to have JDK8 installed.
 - Inside project folder run ```./gradlew appengineRun``` More Gradle plugin [commands](https://github.com/GoogleCloudPlatform/gradle-appengine-plugin)
 - Wait project to build
 - Open in browser [http://localhost:8080/_ah/api/kotlin/v1/greetings/me](http://localhost:8080/_ah/api/kotlin/v1/greetings/me)
+- If works... You are ready to continue to code lab exercises
 
+## What to do?
+
+You will need to create a new endpoint that will serve in a json-array a list of Greetings that have been requested on the /api/kotlin/v1/greetings/[greetingId] endpoint.
+
+### Step 1:
+
+To store data in Google Datastore we will make use of [https://github.com/objectify/objectify](Objectify). Let's add the dependency to Gradle.
+
+```
+compile "com.googlecode.objectify:objectify:5.1.15"
+```
+
+You also need to uncomment the required Objectify settings in web.xml inside webapp/WEB-INF folder.

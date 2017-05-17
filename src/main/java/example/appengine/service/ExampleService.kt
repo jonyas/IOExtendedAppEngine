@@ -1,6 +1,6 @@
-package service
+package example.appengine.service
 
-import model.Greeting
+import example.appengine.model.Greeting
 import javax.inject.Inject
 
 class ExampleService @Inject constructor() {

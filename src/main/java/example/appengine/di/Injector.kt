@@ -1,7 +1,7 @@
-package di
+package example.appengine.di
 
 import dagger.Component
-import endpoint.ExampleEndpoint
+import example.appengine.endpoint.ExampleEndpoint
 import javax.inject.Singleton
 
 @Singleton
